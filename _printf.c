@@ -19,7 +19,6 @@ int _printf(const char *format, ...)
 	va_list list_arguments;
 
 	return ((format == NULL) ? -1 : 0);
-
 	va_start(list_arguments, format);
 
 	while (*format)
