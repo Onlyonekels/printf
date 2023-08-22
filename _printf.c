@@ -14,9 +14,9 @@ int _printf(const char *format, ...)
 	int printed_characters = 0;
 	va_list list_arguments;
 
-	return ((format == NULL) ? (-1) :);
+	return ((format == NULL) ? (-1) : 1);
 
-	va_start(list_arcguments, format);
+	va_start(list_arguments, format);
 
 	while (*format)
 	{
