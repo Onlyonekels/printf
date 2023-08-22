@@ -1,4 +1,8 @@
 #include "main.h"
+#include <stdarg.h>
+#include <string.h>
+#include <unistd.h>
+#include <stddef.h>
 
 /**
 * _printf - A function that produces output
@@ -14,9 +18,9 @@ int _printf(const char *format, ...)
 	int printed_characters = 0;
 	va_list list_arguments;
 
-	return ((format == NULL) ? (-1) :);
+	return ((format == NULL) ? -1 : 0);
 
-	va_start(list_arcguments, format);
+	va_start(list_arguments, format);
 
 	while (*format)
 	{
@@ -68,5 +72,5 @@ int _printf(const char *format, ...)
 	}
 
 	va_end(list_arguments);
-
+		return (0);
 }
